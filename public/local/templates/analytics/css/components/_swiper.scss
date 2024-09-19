@@ -1,0 +1,112 @@
+.swiper {
+  width: 100%;
+
+  .swiper-wrapper {
+    display: flex;
+    //gap: 80px;
+
+    .swiper-slide {
+      text-align: center;
+      width: calc(100% / 3);
+      background-color:#0F1F4B;
+      border-radius: 30px;
+      padding: 50px 60px 70px;
+      box-shadow: 0px 18px 50px -15px #192A5933;
+
+      &_white {
+        background-color: $white;
+        box-shadow: 0px 18px 50px -15px #060F28;
+      }
+
+      &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35.16px;
+        text-align: center;
+        color: $white;
+        margin-bottom: 10px;
+
+        &_white {
+          color: #172755;
+        }
+      }
+
+      &__text {
+        font-size: 18px;
+        line-height: 27px;
+        color: $gray;
+        margin-bottom: 37px;
+
+        &_white {
+          color: $gray;
+        }
+      }
+
+      &__price {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 70.31px;
+        color: $white;
+
+        &_white {
+          color: #172755;
+        }
+      }
+
+      &__price-span {
+        display: inline-flex;
+        align-items: baseline;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35.16px;
+        padding-bottom: 5px;
+
+        &_white {
+          color: #172755;
+        }
+      }
+
+      &__period {
+        line-height: 22.4px;
+        color: $gray;
+        margin-bottom: 40px;
+      }
+
+      &__btn {
+        line-height: 50px;
+        height: 50px;
+        top: 320px;
+        padding: 0 80px;
+        border-radius: 68px;
+        border-color: $background-dark-blue;
+        color: $white;
+        transition: background-color 0.3s ease-out;
+
+        &:hover {
+          background-color: $pink;
+          transition: background-color 0.3s ease-out;
+        }
+
+        &_pink {
+          border-color: $pink;
+          background-color: $pink;
+
+          &:hover {
+            background-color: $background-dark-blue;
+          }
+        }
+      }
+
+      &__line {
+        display: block;
+        width: 220px;
+        height: 1px;
+        background-color: $background-dark-blue;
+        margin-bottom: 28px;
+      }
+    }
+  }
+}
